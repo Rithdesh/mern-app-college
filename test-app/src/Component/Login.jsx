@@ -1,6 +1,4 @@
-import React from "react";
-import Difference from "./Difference";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function Login() {
   const navigate = useNavigate();
   return (
@@ -13,16 +11,16 @@ function Login() {
             <input
               type="text"
               className="w-full px-3 py-3 border rounded-lg focus:outline-none"
-              required="true"
+              required={true}
             />
             <p className="font-semibold text-gray-700 mb-2">Password</p>
             <input
               type="password"
               className="w-full px-3 py-3 border rounded-lg focus:outline-none"
-              required="true"
+              required={true}
             />
           </form>
-          <button className="w-full bg-blue-500 text-white py-3 rounded-lg mt-6 hover:bg-blue-600 transition-colors duration-300" onClick={()=>navigate("/difference")}>
+          <button className="w-full bg-blue-500 text-white py-3 rounded-lg mt-6 hover:bg-blue-600 transition-colors duration-300" onClick={()=>navigate("/home")}>
             Login
           </button>
         </div>
