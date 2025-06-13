@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Rithdesh/mern-app-college#readme",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.17.0",
     "mongoose": "^8.15.1",
